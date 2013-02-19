@@ -1,5 +1,5 @@
 diff --git a/package/kernel/modules/usb.mk b/package/kernel/modules/usb.mk
-index be9ed20..76b1793 100644
+index be9ed20..319eea3 100644
 --- a/package/kernel/modules/usb.mk
 +++ b/package/kernel/modules/usb.mk
 @@ -37,11 +37,13 @@ endef
@@ -41,7 +41,7 @@ index be9ed20..76b1793 100644
 +  FILES:= \
 +	$(LINUX_DIR)/drivers/usb/chipidea/ci_hdrc.ko \
 +	$(LINUX_DIR)/drivers/usb/chipidea/ci13xxx_ar933x.ko
-+  AUTOLOAD:=$(call AutoLoad,22,udc-core)
++  AUTOLOAD:=$(call AutoLoad,22,ci_hdrc ci13xxx_ar933x)
 +  $(call AddDepends/usb)
 +endef
 +
