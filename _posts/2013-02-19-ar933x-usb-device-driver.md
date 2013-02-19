@@ -46,8 +46,8 @@ quick guide of the commands. For the full version and prerequisites go to the
 Setup the build environment:
 	sudo apt-get update
 	sudo apt-get install subversion build-essential
-	mkdir ~/openwrt
-	cd ~/openwrt
+	mkdir openwrt
+	cd openwrt
 	svn co svn://svn.openwrt.org/openwrt/trunk/
 	cd trunk
 
@@ -80,15 +80,16 @@ address so no need to configure the PC).
 
 #### Serial example: ####
 	insmod g_serial
-	echo 'ttyGS0::askfirst:-/bin/sh' >> /etc/inittab
+	echo 'ttyGS0::askfirst:/bin/ash --login' >> /etc/inittab
 	kill -HUP 1 #reloads inittab
+Connect to the newly detected serial port and press enter in the blank screen.
 
 #### Mass Storage: ####
 	dd if=/dev/zero of=/tmp/mass_storage.img bs=1M count=10
 	insmod g_mass_storage file=/tmp/mass_storage.img removable=1 cdrom=0
 In windows this will pop format dialog since the image is not initialized.
 
-If you need a module to be loaded on startup add it on a new line in 
+If you need a module to be loaded at startup add it on a new line in 
 /etc/modules.d/22-usb-chipidea file.
 
 ### References ###
