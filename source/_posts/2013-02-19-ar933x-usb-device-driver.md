@@ -23,8 +23,7 @@ resistors are crucial to the boot sequence. For example R2 tells the processor
 to boot from flash. Optinally a switch can be connected to the pin so you can 
 select which mode to use.
 
-{% img /images/WR703N_B.jpg 360 371 'WR703N back side.  Image source: OpenWRT Wiki.' %}
-{% img /images/WR703N_A.jpg 360 371 'WR703N front side. Image source: OpenWRT Wiki.' %}
+![WR703N back side.  Image source: OpenWRT Wiki.](/images/WR703N_B.jpg)
 
 The second hardware modification is creating a cable to connect the router with.
 One option is to split the cable coming from the PC and connect the data lines
@@ -34,6 +33,8 @@ The other option is to solder the pins of the Micro-B connector
 (which are left unconnected) to the USB data lines. Use the R103
 and R104 pads which are left unpopulated and are near the connector. This will 
 allow you to use a standard USB cable to the Micro-B connector.
+
+![WR703N front side. Image source: OpenWRT Wiki.](/images/WR703N_A.jpg)
 
 ### Software Changes ###
 

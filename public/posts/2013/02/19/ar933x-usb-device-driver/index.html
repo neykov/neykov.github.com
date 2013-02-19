@@ -11,13 +11,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<link rel="canonical" href="">
-	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="//stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 	
 </head>
 
 
 <body>
-	<header id="header" class="inner"><h1><a href="/">NEYKOV.name</a></h1>
+	<header id="header" class="inner"><h1><a href="//">NEYKOV.name</a></h1>
 <nav id="main-nav"></nav>
 <nav id="mobile-nav">
 	<div class="alignleft menu">
@@ -29,7 +29,7 @@
 		<div class="container">
 			<form action="" method="get">
 				<input type="text" name="q" results="0">
-				<input type="hidden" name="q" value="site:neykov.name">
+				<input type="hidden" name="q" value="site:http://neykov.name">
 			</form>
 		</div>
 	</div>
@@ -79,8 +79,7 @@ resistors are crucial to the boot sequence. For example R2 tells the processor
 to boot from flash. Optinally a switch can be connected to the pin so you can
 select which mode to use.</p>
 
-<p><img src="/images/WR703N_B.jpg" width="360" height="371" title="'WR703N back side.  Image source: OpenWRT Wiki.'" >
-<img src="/images/WR703N_A.jpg" width="360" height="371" title="'WR703N front side. Image source: OpenWRT Wiki.'" ></p>
+<p><img src="/images/WR703N_B.jpg" alt="WR703N back side.  Image source: OpenWRT Wiki." /></p>
 
 <p>The second hardware modification is creating a cable to connect the router with.
 One option is to split the cable coming from the PC and connect the data lines
@@ -90,6 +89,8 @@ The other option is to solder the pins of the Micro-B connector
 (which are left unconnected) to the USB data lines. Use the R103
 and R104 pads which are left unpopulated and are near the connector. This will
 allow you to use a standard USB cable to the Micro-B connector.</p>
+
+<p><img src="/images/WR703N_A.jpg" alt="WR703N front side. Image source: OpenWRT Wiki." /></p>
 
 <h3>Software Changes</h3>
 
@@ -118,7 +119,7 @@ cd trunk
 <pre><code>make menuconfig
 </code></pre>
 
-<p>select &#8220;Target Profile&#8221; - &#8220;TP-Link WR703N&#8221;, go to &#8220;Kernel Modules&#8221;/&#8221;USB Support&#8221; and select</p>
+<p>select "Target Profile" - "TP-Link WR703N", go to "Kernel Modules"/"USB Support" and select</p>
 
 <pre><code>kmod-usb-chipidea
 kmod-usb-core
@@ -176,19 +177,7 @@ proved invaluable multiple times. Special thanks to
 
 
 <div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-19T00:00:00+02:00" pubdate data-updated="true">Feb 19<span>th</span>, 2013</time></div>
+	<div class="date"></div>
 	
 </div>
 </article>
