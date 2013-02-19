@@ -52,7 +52,7 @@ Setup the build environment:
 	cd trunk
 
 Apply the patch:
-	wget -qO- http://gitorious/svetoslav/..../.patch | patch -p1
+	wget -qO- http://neykov.name/ar933x_usb_device_openwrt.patch | patch -p1
 
 Configure:
 	make menuconfig
