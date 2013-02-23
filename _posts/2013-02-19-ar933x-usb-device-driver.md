@@ -52,7 +52,7 @@ Setup the build environment:
 	cd trunk
 
 Apply the patch:
-	wget -qO- http://neykov.name/ar933x_usb_device_openwrt.patch | patch -p1
+	wget -qO- https://www.gitorious.org/ar933x-chipidea-usb/openwrt-patch/blobs/raw/master/openwrt-ar933x-chipidea.patch | patch -p1
 
 Configure:
 	make menuconfig
