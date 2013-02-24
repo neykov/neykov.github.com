@@ -388,6 +388,12 @@ border:none;
 border-radius:0;
 }
 
+#sub-nav .social a.email {
+background:url(/images/social/email.png?1361223593) center no-repeat transparent;
+border:none;
+border-radius:0;
+}
+
 #sub-nav .social a.coderwall {
 background:url(/images/social/coderwall.png?1361120635) center no-repeat #3a729f;
 border:1px solid #3a729f;
