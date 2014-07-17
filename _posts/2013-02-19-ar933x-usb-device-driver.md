@@ -50,28 +50,35 @@ quick guide of the commands. For the full version and prerequisites go to the
 [OpenWRT Buildroot](http://wiki.openwrt.org/doc/howto/buildroot.exigence) page.
 
 Setup the build environment:
+
 	sudo apt-get update
-	sudo apt-get install subversion build-essential
+	sudo apt-get install build-essential subversion libncurses5-dev zlib1g-dev gawk gcc-multilib flex git-core gettext
 	mkdir openwrt
 	cd openwrt
-	svn co svn://svn.openwrt.org/openwrt/trunk/
+	svn co svn://svn.openwrt.org/openwrt/trunk/ -r {2013-02-19}
 	cd trunk
 
 Apply the patch:
+
 	wget -qO- https://www.gitorious.org/ar933x-chipidea-usb/openwrt-patch/blobs/raw/master/openwrt-ar933x-chipidea.patch | patch -p1
 
 Configure:
+
 	make menuconfig
-select "Target Profile" - "TP-Link WR703N", go to "Kernel Modules"/"USB Support" and select 
+
+select "Target Profile" - "TP-Link WR703N", go to "Kernel Modules"/"USB Support" and select (as modules)
+
 	kmod-usb-chipidea
 	kmod-usb-core
 	kmod-usb-gadget
 	kmod-usb-gadget-*
 
 Exit, save and execute
+
 	make -j<number of cores>
 
 To upload the new image to the device:
+
 	scp bin/ar71xx/openwrt-ar71xx-generic-tl-wr703n-v1-squashfs-sysupgrade.bin root@<router ip address>:/tmp
 	ssh root@<router ip address> sysupgrade -v /tmp/openwrt-ar71xx-generic-tl-wr703n-v1-squashfs-sysupgrade.bin
 
