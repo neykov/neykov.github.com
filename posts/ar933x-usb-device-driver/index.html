@@ -29,7 +29,7 @@
 		<div class="container">
 			<form action="index.html" method="get">
 				<input type="text" name="q" results="0">
-				<input type="hidden" name="q" value="site:http://neykov.name">
+				<input type="hidden" name="q" value="site:https://neykov.name">
 			</form>
 		</div>
 	</div>
@@ -89,7 +89,7 @@ allow you to use a standard USB cable to the Micro-B connector.</p>
 <p>You need to compile your own OpenWRT image customized with a patch which adds
 support for the USB device mode. Only the trunk version is supported. Here is a
 quick guide of the commands. For the full version and prerequisites go to the
-<a href="http://wiki.openwrt.org/doc/howto/buildroot.exigence">OpenWRT Buildroot</a> page.</p>
+<a href="https://oldwiki.archive.openwrt.org/doc/howto/buildroot.exigence">OpenWRT Buildroot</a> page.</p>
 
 <p>Setup the build environment:</p>
 
@@ -103,7 +103,7 @@ cd trunk
 
 <p>Apply the patch:</p>
 
-<pre><code>wget -qO- http://neykov.name/posts/ar933x-usb-device-driver/ar933x_usb_device_openwrt.patch | patch -p1
+<pre><code>wget -qO- https://neykov.name/posts/ar933x-usb-device-driver/ar933x_usb_device_openwrt.patch | patch -p1
 </code></pre>
 
 <p>Configure:</p>
@@ -164,7 +164,7 @@ insmod g_mass_storage file=/tmp/mass_storage.img removable=1 cdrom=0
 
 <h3>References</h3>
 
-<p>During development the <a href="http://squonk42.github.com/TL-WR703N/">board schematic</a>
+<p>During development the <a href="https://squonk42.github.com/TL-WR703N/">board schematic</a>
 proved invaluable multiple times. Special thanks to
 <a href="https://github.com/Squonk42">Squonk42</a> for creating it.</p>
 </div>
@@ -179,8 +179,8 @@ proved invaluable multiple times. Special thanks to
 	
 
 </div>
-	<footer id="footer" class="inner"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed">
-	<img alt="Creative Commons Contract" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" />
+	<footer id="footer" class="inner"><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed">
+	<img alt="Creative Commons Contract" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" />
 </a>
 <p>Svetoslav Neykov</p>
 
